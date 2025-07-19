@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #00ffc8;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items:left;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-8px);
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.logo-container h1:hover {
+  color: #ffc6e3;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  font-weight: 500;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.banner {
+  background: url('https://tappwater.co/cdn/shop/articles/top-10-best-reusable-water-bottles.jpg?v=1701695402') no-repeat center center/cover;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20rem 2rem;
+}
+
+.banner h2 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.products {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.product-grid {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  alignment-baseline: right;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background-color: #004d83;
+}
+
+.about {
+  padding: 2rem;
+  background-color: #a7e3ff;
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+}
